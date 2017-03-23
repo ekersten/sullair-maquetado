@@ -1,0 +1,11 @@
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+body {
+  background: grey;
+}
+
+#toolbar {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	color: black;
+}

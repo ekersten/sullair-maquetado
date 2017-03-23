@@ -1,0 +1,76 @@
+@import "includes/variables";
+@import "includes/mixins";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "includes/grid";
+
+
+@include resetHederMargins();
+
+
+body {
+	border-top: 3px solid $sullair-green;
+	font-size: 15px;
+	line-height: 1.46666em;
+	font-weight: $font-weight-light;
+}
+
+.slide {
+	position: relative;
+}
+
+.supertitle {
+	font-size: 188px;
+	font-weight: $font-weight-bold;
+	line-height: .9em;
+	letter-spacing: -0.02em;
+}
+
+div[class*="container"].debug {
+	.row {
+		div[class*="col-"] {
+			span {
+				display: block;
+				background: rebeccapurple;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.component {
+	.text-box {
+		padding: 30px;
+
+		.bajada {
+			font-size: 12px;
+			font-weight: $font-weight-roman;
+		}
+
+		.titulo {
+			font-size: 30px;
+			font-weight: $font-weight-light;
+			margin: 12px 0;
+		}
+
+		.cta {
+			font-weight: $font-weight-bold;
+			margin-top: 30px;
+			color: black;
+			width: 100%;
+			display: block;
+			left: 0;
+			right: 0;
+
+			&:after {
+				display: inline-block;
+				right: 15%;
+				content: "\2192";
+				color: #d0d0d0;
+				position: absolute;
+			}
+		}
+	}
+}
+
+
+@import "includes/helpers";

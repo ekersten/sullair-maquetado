@@ -1,0 +1,90 @@
+$grid-gutter-width: 22px;
+$base_height: 138px;
+
+$debug: true;
+
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@mixin makeHeights($percent) {
+  @for $i from 1 through $grid-columns {
+    .height-#{$i}{
+      height: round((($base_height * $i) + ($grid-gutter-width * ($i - 1))) * $percent);
+    }
+
+    .pull-up-#{$i} {
+        position: relative;
+        top: round((($base_height * $i) + ($grid-gutter-width * ($i - 1))) * $percent) * -1;
+    }
+
+    .pull-down-#{$i} {
+        position: relative;
+        top: round((($base_height * $i) + ($grid-gutter-width * ($i - 1))) * $percent);
+    }
+  }
+}
+.container, .container-fluid {
+  @if($debug) {
+    background: red;
+    padding-top: $grid-gutter-width / 2;  
+  }
+  
+}
+
+.wrapper {
+    @extend .row;
+    @if($debug){
+        margin-bottom: $grid-gutter-width / 2;
+    }
+
+    div[class*="col-"]:first-child {
+        padding-left: 0;
+    }
+
+    div[class*="col-"]:last-child {
+        padding-right: 0;
+    }
+}
+
+div[class^="col-"] {
+    @if($debug){
+        background: green;
+        text-align: center;
+    }
+
+    span {
+        display: block;
+        background: rebeccapurple;
+        color: white;
+    }
+}
+
+.card {
+    background: white;
+}
+
+@media (min-width: $screen-sm-min) {
+    @include makeHeights(0.5);
+}
+
+@media (min-width: $screen-md-min) {
+    @include makeHeights(0.75);
+}
+
+@media (min-width: $screen-lg-min) {
+    @include makeHeights(1);
+}
+
+@media (min-width: 1270px) {
+  .wrapper.short {
+    width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*
+xs <768px
+sm ≥768px
+md ≥992px
+lg ≥1200px
+*/

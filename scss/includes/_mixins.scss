@@ -1,0 +1,17 @@
+@mixin makeHeights() {
+	@for $i from 1 through 12 {
+		.height-#{$i}{
+			height: (138 * $i) + ($grid-gutter-width * ($i - 1));
+		} 
+	}
+}
+
+@mixin resetHederMargins() {
+	@for $i from 1 through 6 {
+		h#{$i} {
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 1em;
+		}
+	}
+}

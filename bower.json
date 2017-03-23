@@ -1,0 +1,18 @@
+{
+  "name": "sullair_grid",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Eric Kersten <eric.kersten@egoargentina.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
