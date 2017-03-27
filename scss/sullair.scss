@@ -14,6 +14,39 @@ body {
 	font-weight: $font-weight-light;
 }
 
+header {
+	padding: 35px 0;
+	.logo {
+		float: left;
+	}
+
+	.navigation {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		float: left;
+		margin-left: 20px;
+		
+		li {
+			display: inline-block;
+			margin: 0 50px;
+
+			a {
+				color: black;
+				font-size: 15px;
+
+				&:hover {
+					color: $sullair-green;
+				}
+			}
+		}
+	}
+
+	.search {
+		float: right;
+	}
+}
+
 .slide {
 	position: relative;
 }
