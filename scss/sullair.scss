@@ -43,6 +43,11 @@ body {
 				&:hover {
 					color: $sullair-green;
 				}
+
+				&:active {
+					text-decoration: none;
+					color: $sullair-green;
+				}
 			}
 		}
 	}
@@ -162,6 +167,14 @@ div[class*="container"].debug {
 }
 
 .component {
+
+	&.large {
+		.text-box {
+			.titulo {
+				font-size: 60px;
+			}
+		}
+	}
 	.text-box {
 		padding: 30px;
 
