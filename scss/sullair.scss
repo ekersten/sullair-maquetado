@@ -1,11 +1,6 @@
 @import "includes/normalize";
 @import "includes/variables";
 @import "includes/mixins";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "includes/grid";
-
-
-// @include resetHederMargins();
 
 * {
    @include box-sizing(border-box);
@@ -22,6 +17,12 @@ body {
 	line-height: 1.46666em;
 	font-family: $font-family-sans-serif;
 	font-weight: $font-weight-light;
+
+	&.debug {
+		.component {
+			background: $sullair-green;
+		}
+	}
 }
 
 .wrapper {
@@ -42,7 +43,6 @@ body {
 }
 
 .component {
-	background: $sullair-green;
 	padding-left: $grid-gutter-width / 2;
 	padding-right: $grid-gutter-width / 2;
 	float: left;
