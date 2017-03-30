@@ -1,17 +1,16 @@
-@mixin makeHeights() {
-	@for $i from 1 through 12 {
-		.height-#{$i}{
-			height: (138 * $i) + ($grid-gutter-width * ($i - 1));
-		} 
-	}
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
 }
 
-@mixin resetHederMargins() {
-	@for $i from 1 through 6 {
-		h#{$i} {
-			margin-top: 0;
-			margin-bottom: 0;
-			line-height: 1em;
-		}
-	}
+@mixin box-sizing($boxmodel) {
+	-webkit-box-sizing: $boxmodel;
+	-moz-box-sizing: $boxmodel;
+	box-sizing: $boxmodel;
 }
