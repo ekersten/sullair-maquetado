@@ -59,6 +59,10 @@ body {
 	&.w4 {
 		width: 50%;
 		max-width: 635px;
+
+		.text {
+			padding: 48px 40px;
+		}
 	}
 
 	&.w6 {
@@ -104,10 +108,46 @@ body {
 		float: left;
 	}
 
-	> .content {
-		display: block;
-		background-color: white;
-		margin: $grid-gutter-width / 2;
+	> .image {
+		img {
+			@include img-responsive();
+		}
+	}
+
+	> .text {
+		padding: 30px;
+
+		.subtitle, .title, .copy, .cta {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.subtitle {
+			font-weight: $font-weight-roman;
+			font-size: 12px;
+			line-height: 1em;
+			margin-bottom: 22px;
+		}
+
+		.title {
+			font-weight: $font-weight-light;
+			font-size: 30px;
+			line-height: 1em;
+			margin-bottom: 20px;
+		}
+
+		.cta {
+			display: block;
+			font-weight: $font-weight-bold;
+			font-size: 15px;
+			color: $sullair-black;
+			text-decoration: none;
+			margin-top: 20px;
+		}
+
+		&.grey {
+			background-color: $sullair-light-grey;
+		}
 	}
 
 }
