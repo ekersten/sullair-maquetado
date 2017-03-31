@@ -40,6 +40,25 @@ body {
 	.component:last-child {
 		padding-right: 0;
 	}
+
+	> div:first-of-type {
+		padding-left: 0;
+	}
+
+	> div:last-of-type {
+		padding-right: 0;
+	}
+
+	&.videos {
+		.cta {
+			display: block;
+			font-weight: $font-weight-bold;
+			font-size: 15px;
+			color: $sullair-black;
+			text-decoration: none;
+			text-align: right;
+		}
+	}
 }
 
 .component {
@@ -99,13 +118,106 @@ body {
 
 	&.full-width-text-right {
 		width: 100%;
-		height: 438px;
+		height: 600px;
 		margin-bottom: $grid-gutter-width / 2;
+		padding-left: 0;
+		padding-right: 0;
+
+		.image, .text-wrapper {
+			width: 50%;
+			float: left;
+			height: 600px;
+		}
+
+		.image {
+			background-repeat: no-repeat;
+			background-position: right center;
+		}
+
+		.text-wrapper {
+			display: table;
+
+			.text {
+				display: table-cell;
+				vertical-align: middle;
+
+				.subtitle, .title, .copy, .cta {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.subtitle {
+					font-weight: $font-weight-roman;
+					font-size: 12px;
+					margin-bottom: 45px;
+				}
+
+				.title {
+					font-size: 60px;
+					line-height: 1em;
+					font-weight: $font-weight-light;
+					margin-bottom: 40px;
+				}
+
+				.cta {
+					display: block;
+					font-weight: $font-weight-bold;
+					font-size: 15px;
+					color: $sullair-black;
+					text-decoration: none;
+					margin-top: 20px;
+				}
+			}
+		}
+
 	}
 	
 	&.video {
 		max-width: 317px;
 		float: left;
+
+		.image {
+			position: relative;
+
+			.duration {
+				position: absolute;
+				left: 10px;
+				top: 5px;
+				color: $sullair-white;
+				font-weight: $font-weight-bold;
+				font-size: 12px;
+			}
+		}
+
+		.text {
+			padding: 0;
+			margin-top: 25px;
+			font-size: 15px;
+
+			p:before {
+				content: "> "
+			}
+		}
+	}
+
+	&.w8.h3 {
+		.image {
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-size: cover;
+			width: 76.37796%;
+			max-width: 970px;
+			float: left;
+			overflow: hidden;
+			min-height: 438px;
+		}
+
+		.text {
+			width: 23.62204%;
+			max-width: 300px;
+			float: left;
+			height: 438px;
+		}
 	}
 
 	> .image {
@@ -143,6 +255,10 @@ body {
 			color: $sullair-black;
 			text-decoration: none;
 			margin-top: 20px;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		&.grey {
