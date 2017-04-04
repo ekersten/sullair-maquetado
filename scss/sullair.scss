@@ -27,27 +27,27 @@ body {
 
 .wrapper {
 	width: 100%;
-	max-width: 1270px;
+	max-width: 1272px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: $grid-gutter-width / 2;
 	@include clearfix;
 
-	.component:first-child {
-		padding-left: 0;
-	}
+	// .component:first-child {
+	// 	padding-left: 0;
+	// }
 
-	.component:last-child {
-		padding-right: 0;
-	}
+	// .component:last-child {
+	// 	padding-right: 0;
+	// }
 
-	> div:first-of-type {
-		padding-left: 0;
-	}
+	// > div:first-of-type {
+	// 	padding-left: 0;
+	// }
 
-	> div:last-of-type {
-		padding-right: 0;
-	}
+	// > div:last-of-type {
+	// 	padding-right: 0;
+	// }
 
 	&.videos {
 		.cta {
@@ -68,16 +68,16 @@ body {
 
 	&.w2 {
 		width: 25%;
-		max-width: 300px;
+		// max-width: 300px;
 	}
 	
-	&.w3 {
-		width: 462px;
-	}
+	// &.w3 {
+	// 	width: 462px;
+	// }
 
 	&.w4 {
 		width: 50%;
-		max-width: 635px;
+		// max-width: 624px;
 
 		.text {
 			padding: 48px 40px;
@@ -85,8 +85,8 @@ body {
 	}
 
 	&.w6 {
-		width: 100%;
-		max-width: 970px;
+		width: 75%;
+		// max-width: 970px;
 	}
 
 	&.w8 {
@@ -281,6 +281,50 @@ body {
 	}
 
 }
+
+footer {
+	background: $sullair-dark-grey;
+	color: $sullair-medium-grey;
+	font-weight: $font-weight-light;
+	font-size: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	@include clearfix;
+
+	.wrapper {
+		margin-bottom: 0;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+		a {
+			color: $sullair-medium-grey;
+			text-decoration: none;
+
+			&:after {
+				content: "\27F6";
+				font-size: 1.6em;
+				position: relative;
+				margin-left: 30px;
+				display: inline-block;
+			}
+
+			&:hover {
+				text-decoration: underline;
+
+				&:after {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+/* MEDIA QUERIES */
 
 @media (min-width: 1367px) {
   body {
