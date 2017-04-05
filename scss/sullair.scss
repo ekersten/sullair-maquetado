@@ -2,6 +2,8 @@
 @import "includes/variables";
 @import "includes/mixins";
 
+@import "includes/slider";
+
 * {
    @include box-sizing(border-box);
 
@@ -243,6 +245,10 @@ body {
 	> .text, > .wrapper > .text {
 		padding: 30px;
 
+		&.border{
+			border-bottom: 1px solid $sullair-light-grey2;
+		}
+
 		.subtitle, .title, .copy, .cta {
 			margin-top: 0;
 			margin-bottom: 0;
@@ -309,6 +315,7 @@ footer {
 				content: "\27F6";
 				font-size: 1.6em;
 				position: relative;
+				font-weight: $font-weight-light;
 				margin-left: 30px;
 				display: inline-block;
 			}
@@ -339,21 +346,18 @@ footer {
 
 	.component {
 		
-		&.w4h3 {
-			max-width: inherit;
-		}
-
-		&.w6h3 {
-			max-width: 1270px;
-			height: 438px;
-			padding-left: 0;
-			padding-right: 0;
+		&.w6 {
+			&.full-md {
+				width: 100%;
+				max-width: inherit;
+			}
 		}	
 	}	
 
   .hide-md {
   	display: none !important;
   }
+
 }
 
 @media (max-width: 640px) {
