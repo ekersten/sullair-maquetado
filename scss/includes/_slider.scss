@@ -13,7 +13,7 @@
 
 .slider {
 	.slide {
-		background: pink;
+		// background: pink;
 		height: 600px;
 		position: relative;
 		.titulo {
@@ -54,7 +54,7 @@
 
 			&:after {
 				content: "\27F6";
-				color: $sullair-medium-grey;
+				color: $sullair-light-grey;
 				font-size: 1.6em;
 				position: relative;
 				font-weight: $font-weight-light;
