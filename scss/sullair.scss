@@ -154,13 +154,19 @@ header {
 						background: $sullair-green;
 						color: white;
 					}
+
+					&.disabled {
+						color: $sullair-light-grey2;
+						pointer-events: none;
+					}
 				}
 			}
 		}
 	}
 	.relateditems {
 		margin-top: 50px;
-		
+		margin-bottom: 30px;
+
 		.relateditem {
 			width: 25%;
 			background: $sullair-black;
@@ -187,6 +193,10 @@ header {
 				}
 			}
 		}
+	}
+
+	@media (max-width: $breakpoint-small) {
+		display: none;
 	}
 	
 }
@@ -324,7 +334,27 @@ header {
 				}
 			}
 		}
+		
+		@media (max-width: $breakpoint-small) {
 
+			height: auto;
+
+			.image, .text-wrapper {
+				width: 100%;
+				clear: both;
+				float: none;
+				@include clearfix;
+				background-color: $sullair-white;
+			}
+
+			.image {
+				background-size: 130%;
+			}
+
+			.text-wrapper {
+				height: 300px;
+			}
+		}
 	}
 	
 	&.video {
@@ -478,7 +508,7 @@ footer {
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-medium) {
 	body {
 		background: yellow;
 	}
@@ -499,7 +529,7 @@ footer {
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: $breakpoint-small) {
   body {
   	background: red;
   }
