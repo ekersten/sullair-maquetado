@@ -5,10 +5,7 @@
 		$overlay = $('.overlay'),
 		$subnavs = $('.subnav');
 
-	$subnavs.each(function(index, item) {
-		$sub = $(item);
-		$sub.css('top', $sub.height() * -1);
-	});
+	hideSubNavs();
 
 	$overlay.fadeOut(0);
 
@@ -30,4 +27,19 @@
 			}
 		}
 	});
+
+
+	$overlay.on('click', function(e) {
+		$overlay.fadeOut();
+		hideSubNavs();
+		$navLinks.removeClass('active');
+	});
+
+	function hideSubNavs() {
+		$subnavs.each(function(index, item) {
+			$sub = $(item);
+			$sub.css('top', $sub.height() * -1);
+		});
+	}
+
 })(window, jQuery);
