@@ -179,6 +179,12 @@ header {
 			height: 138px;
 			position: relative;
 
+			
+			img {
+				@include img-responsive;
+			}
+			
+
 			.text {
 				color: white;
 				position: absolute;
@@ -538,6 +544,11 @@ footer {
 		background: yellow;
 	}
 
+	footer {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
 	.component {
 		
 		&.w6 {
@@ -558,11 +569,6 @@ footer {
   
   body {
   	background: red;
-  }
-
-  footer {
-  	padding-left: 1em;
-  	padding-right: 1em;
   }
 
   .component {
@@ -626,6 +632,146 @@ footer {
 			}
 		}
   }
+}
+
+.table {
+	width: 100%;
+	
+	tr{
+		border-bottom: 1px solid $sullair-medium-grey2;
+
+		th, td {
+			padding: 25px;
+		}
+	}
+
+	thead {
+		tr {
+			th {
+				text-align: left;
+				font-weight: $font-weight-light;
+				color: $sullair-medium-grey2;
+				font-size: 14px;
+
+				&:nth-child(2) {
+					color: $sullair-green;
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				font-size: 40px;
+				font-weight: $font-weight-light;
+				color: $sullair-medium-grey2;
+
+				&:nth-child(2) {
+					color: $sullair-black;
+				}
+			}
+		}
+	}
+
+}
+
+.short-contact {
+	h4 {
+		font-size: 40px;
+		font-weight: $font-weight-light;
+		color: $sullair-green;
+		line-height: .9em;
+
+		@media (max-width: $breakpoint-small) {
+			width: 100&;
+			text-align: center;
+		}
+	}
+
+	form {
+		input, select {
+			width: 47%;
+			margin: 10px 1%;
+
+			color: $sullair-green;
+		}
+
+		input[type="text"], input[type="email"] {
+			padding: 0;
+			border: none;
+			border-bottom: 2px solid $sullair-green;
+			padding: 1%;
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: $sullair-green;
+			}
+
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: $sullair-green;
+			}
+
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: $sullair-green;
+			}
+
+			&:-moz-placeholder { /* Firefox 18- */
+				color: $sullair-green;
+			}
+		}
+
+		select {
+			padding: 0;
+			border: none;
+			border-bottom: 2px solid $sullair-green;
+			padding: 1%;
+		}
+
+		button {
+			border-radius: 2em;
+			width: 47%;
+			background-color: $sullair-white;
+			border: none;
+			text-align: center;
+			font-size: 16px;
+			font-weight: $font-weight-bold;
+			padding: 1% 0;
+			margin: 10px 1%;
+
+			&.white {
+				border: 2px solid $sullair-green;
+				color: $sullair-green;
+				position: relative;
+				&:before,
+				&:after {
+					font-weight: 100;
+					font-size: 23px;
+				}
+
+				&:before {
+					content: "\27F5";
+					position: absolute;
+					left: 5px;
+				}
+
+				&:after {
+					content: "\27F6";
+					position: absolute;
+					right: 5px;
+				}
+			}
+
+			&.green {
+				background-color: $sullair-green;
+				border: 2px solid $sullair-green;
+				color: $sullair-white;
+			}
+
+
+		}
+
+	}
 }
 
 @import "includes/helpers";
