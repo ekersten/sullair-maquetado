@@ -530,8 +530,14 @@ footer {
 }
 
 @media (max-width: $breakpoint-small) {
+  
   body {
   	background: red;
+  }
+
+  footer {
+  	padding-left: 1em;
+  	padding-right: 1em;
   }
 
   .component {
@@ -549,18 +555,50 @@ footer {
   			padding-right: 0;
   		}
 
+  		&.w8 {
+  			&.h3 {
+  				height: auto;
+  				.image, .text {
+  					width: 100%;
+  					max-width: inherit;
+  					@include clearfix;
+  					background-color: $sullair-white;
+  				}
+
+  				.image {
+  					min-height: 300px;
+  				}
+
+  				.text {
+  					height: auto;
+  				}
+  			}
+  		}
+
+  		&.full-width-inner-text {
+  			height: auto;
+  			
+  			.wrapper {
+  				padding: 30px 0;
+  			}
+
+  			.text {
+  				width: 90%;
+  				max-width: inherit;
+  				margin: 0 auto;
+  				height: auto;
+  			}
+  		}
+
   		&.video {
 			width: 50%;
+			padding-left: .5%;
+			padding-right: .5%;
 
-			&:nth-child(2n) {
-				padding-right: 0;	
+			.text {
+				padding-left: 1%;
+				padding-right: 1%;
 			}
-
-			&:nth-child(2n+1) {
-				padding-left: 0;
-			}
-
-
 		}
   }
 }
