@@ -1,10 +1,19 @@
 /* grid */
-$grid-gutter-width: 24px;
+$grid-gutter-width: 1.041666666666667%;
+
+
+/* breakpoints */
+$breakpoint-medium: 1366px;
+$breakpoint-small: 640px;
 
 /* colors */
 $sullair-green: #008657;
-$sullair-white: #ffffff;
+$sullair-white: #fff;
+$sullair-black: #000;
 $sullair-light-grey: #f5f5f5;
+$sullair-light-grey2: #e5e5e5;
+$sullair-medium-grey: #626262;
+$sullair-dark-grey: #333333;
 
 
 /* fonts */
@@ -14,3 +23,9 @@ $font-weight-light: 300;
 $font-weight-roman: normal;
 $font-weight-medium: 500;
 $font-weight-bold: bold;
+
+
+/*  z-index order */
+$header-z: 300;
+$subnav-z: 200;
+$overlay-z: 100;
