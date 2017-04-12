@@ -108,24 +108,22 @@
 	</div>
 
 	<div class="wrapper">
-		<div class="wrapper">
-			<div class="component w4 h3">
-				<div class="image">
-					<img src="img/mod_4x2.jpg" alt="">
-				</div>
-				<div class="text border">
-					<h4 class="title">Main Title</h4>
-					<a href="#" class="cta">Me interesa saber mas...</a>
-				</div>
+		<div class="component w4 h3">
+			<div class="image">
+				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="component w4 h3">
-				<div class="image">
-					<img src="img/mod_4x2.jpg" alt="">
-				</div>
-				<div class="text border">
-					<h4 class="title">Main Title</h4>
-					<a href="#" class="cta">Me interesa saber mas...</a>
-				</div>
+			<div class="text">
+				<h4 class="title">Main Title</h4>
+				<a href="#" class="cta">Me interesa saber mas...</a>
+			</div>
+		</div>
+		<div class="component w4 h3">
+			<div class="image">
+				<img src="img/mod_4x2.jpg" alt="">
+			</div>
+			<div class="text">
+				<h4 class="title">Main Title</h4>
+				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
 		</div>
 	</div>
@@ -146,7 +144,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -155,7 +153,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -164,7 +162,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -173,7 +171,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -182,7 +180,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -191,7 +189,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -200,7 +198,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -209,7 +207,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
@@ -218,7 +216,7 @@
 			<div class="image">
 				<img src="img/mod_4x2.jpg" alt="">
 			</div>
-			<div class="text border">
+			<div class="text">
 				<h4 class="title">Main Title</h4>
 				<a href="#" class="cta">Me interesa saber mas...</a>
 			</div>
