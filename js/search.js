@@ -2,10 +2,18 @@
 
 	var $searchContainer = $('.search'),
 		$searchForm = $searchContainer.find('form'),
+		$searchBox = $searchForm.find('input[type="text"]'),
 		$icons = $searchContainer.find('i'),
 		$pills = $searchContainer.find('.pill'),
 		$navElements = $('nav li a');
 
+
+
+	$searchContainer.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+		if($searchContainer.hasClass('open')) {
+			$searchBox.focus();
+		}
+	});
 
 	$icons.on('click', function(e) {
 		$searchContainer.toggleClass('open');
