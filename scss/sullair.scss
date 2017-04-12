@@ -773,4 +773,25 @@ footer {
 	}
 }
 
+.options {
+	position: absolute;
+	left: 1em;
+	bottom: 12em;
+
+	.legend {
+		font-weight: $font-weight-light;
+		font-size: 16px;
+	}
+
+	select {
+		margin: 1% 0;
+		border: 1px solid $sullair-black;
+		border-radius: 2em;
+		font-family: $font-family-sans-serif;
+		font-size: 16px;
+		min-width: 300px;
+		padding: 1% 2%;
+	}
+}
+
 @import "includes/helpers";
