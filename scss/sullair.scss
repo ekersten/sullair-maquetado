@@ -129,7 +129,7 @@ header {
 			bottom: 40px;
 			width: 1000px;
 			left: 955px;
-			transition: left .4s ease-in-out;
+			transition: left .3s ease-in-out;
 
 
 			&.open {
@@ -151,11 +151,34 @@ header {
 				input[type="text"] {
 					width: 600px;
 					border: none;
-					border-bottom: 1px solid #ddd;
+					border-bottom: 1px solid $sullair-medium-grey2;
+					color: $sullair-black;
 					padding: 1% 0;
 					font-size: 20px;
 					font-weight: 100;
 					background-color: transparent;
+
+					&:focus {
+						outline: none;
+						color: $sullair-green;
+						border-color: $sullair-green;
+
+						&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+							color: $sullair-green;
+						}
+
+						&::-moz-placeholder { /* Firefox 19+ */
+							color: $sullair-green;
+						}
+
+						&:-ms-input-placeholder { /* IE 10+ */
+							color: $sullair-green;
+						}
+
+						&:-moz-placeholder { /* Firefox 18- */
+							color: $sullair-green;
+						}
+					}
 				}
 			}
 
@@ -210,6 +233,13 @@ header {
 
 			i {
 				color: white;
+			}
+
+			form {
+
+				input[type="text"] {
+					color: $sullair-medium-grey2;
+				}
 			}
 		}
 	}
