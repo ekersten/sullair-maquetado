@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/sullair.css">
 	<title>Sullair</title>
 </head>
-<body class="">
+<body class="inverted-nav">
 	
 	<?php include('includes/header.php'); ?>
 

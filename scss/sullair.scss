@@ -69,7 +69,6 @@ body {
 
 header {
 	border-top: 3px solid $sullair-green;
-	padding: 30px 0;
 	height: 83px;
 	z-index: $header-z;
 	position: relative;
@@ -78,11 +77,19 @@ header {
 
 	.wrapper {
 		margin-bottom: 0;
+		overflow: hidden;
+		position: relative;
+		padding: 30px 0;
 
 		.logo {
 			float: left;
-			img {
+			background: transparent url('../img/logo.png') no-repeat;
+			width: 249px;
+			height: 16px;
+
+			a {
 				display: block;
+				text-indent: -9999px;
 			}
 		}
 
@@ -116,6 +123,94 @@ header {
 
 		.search {
 		 	float: right;
+			height: 50px;
+			background: $sullair-white;
+			position: relative;
+			bottom: 40px;
+			width: 1000px;
+			left: 955px;
+			transition: left .4s ease-in-out;
+
+
+			&.open {
+				left: 0;
+			}
+
+			i {
+				padding: 17px 17px;
+				cursor: pointer;
+				float: left;
+			}
+
+			form {
+				display: block;
+				font-size: 12px;
+				float: left;
+				margin-right: 30px;
+
+				input[type="text"] {
+					width: 600px;
+					border: none;
+					border-bottom: 1px solid #ddd;
+					padding: 1% 0;
+					font-size: 20px;
+					font-weight: 100;
+					background-color: transparent;
+				}
+			}
+
+			.filters {
+				position: relative;
+				top: 15px;
+				font-size: 14px;
+				color: #999;
+				float: left;
+				width: 255px;
+
+				.pill {
+					border-radius: 2em;
+					background: $sullair-medium-grey;
+					color: $sullair-white;
+					font-weight: $font-weight-bold;
+					padding: 2% 5%;
+					opacity: 0.5;
+					cursor: pointer;
+
+					&.selected {
+						background-color: $sullair-green;
+					}
+				}	
+			}
+
+			
+		}
+	}
+}
+
+.inverted-nav {
+	header {
+		background-color: $sullair-black;
+
+		.logo {
+			background-image: url('../img/logo_white.png');
+		}
+
+		nav {
+			ul {
+				li {
+					a {
+						color: $sullair-white;
+					}		
+				}
+			}
+		}
+
+		.search {
+			background: $sullair-black;
+
+			i {
+				color: white;
+			}
 		}
 	}
 }

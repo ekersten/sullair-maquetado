@@ -1,7 +1,7 @@
 <header>
 	<div class="wrapper">
 		<div class="logo">
-			<img src="img/logo.png" alt="">
+			<a href="#">Sullair Argentina</a>
 		</div>
 		<nav>
 			<ul>
@@ -12,7 +12,16 @@
 				<li><a href="#">Acerca de Sullair</a></li>
 			</ul>
 		</nav>
-		<div class="search"><i class="fa fa-search"></i></div>
+		<div class="search">
+			<i class="fa fa-search"></i>
+			<form action="">
+				<input type="text" placeholder="Contanos que estás buscando">
+			</form>
+			<div class="filters">
+				Aplicar en <span class="pill">Equipos</span> <span class="pill">Todo el sitio</span>	
+			</div>
+			<i class="fa fa-times"></i>
+		</div>
 	</div>
 </header>
 <div class="subnav" id="sub-equipos">

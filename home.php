@@ -242,6 +242,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 	<script src="js/nav.js"></script>
+	<script src="js/search.js"></script>
 
 	<script>
 		$('.slider').bxSlider({

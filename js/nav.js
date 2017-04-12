@@ -3,7 +3,8 @@
 	var $navContainer = $('header nav'),
 		$navLinks = $navContainer.find('a'),
 		$overlay = $('.overlay'),
-		$subnavs = $('.subnav');
+		$subnavs = $('.subnav'),
+		$searchIcon = $('.search > i');
 
 	hideSubNavs();
 
