@@ -1,12 +1,12 @@
-/* grid */
+// grid
 $grid-gutter-width: 1.041666666666667%;
 
 
-/* breakpoints */
+// breakpoints
 $breakpoint-medium: 1366px;
 $breakpoint-small: 640px;
 
-/* colors */
+// colors
 $sullair-green: #008657;
 $sullair-white: #fff;
 $sullair-black: #000;
@@ -17,7 +17,7 @@ $sullair-medium-grey2: #d2d2d2;
 $sullair-dark-grey: #333333;
 
 
-/* fonts */
+// fonts
 $font-family-sans-serif:  'Helvetica Neue LT Std', Helvetica, Arial, sans-serif !default;
 
 $font-weight-light: 300;
@@ -25,8 +25,7 @@ $font-weight-roman: normal;
 $font-weight-medium: 500;
 $font-weight-bold: bold;
 
-
-/*  z-index order */
+// z-index order
 $header-z: 3000;
 $subnav-z: 2000;
 $overlay-z: 1000;
