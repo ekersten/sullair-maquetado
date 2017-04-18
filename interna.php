@@ -22,7 +22,16 @@
 		</div>
 	</div>
 
-	<div class="hero" style="background-image: url(img/volvo.jpg);"></div>
+	<div class="hero" style="background-image: url(img/volvo.jpg);">
+		<div class="wrapper">
+			<div class="vcenter">
+				<div class="content">
+					<h1 class="title">Volvo A40F</h1>
+					<h6 class="subtitle"><strong>Mina Casposo</strong> caso de éxito</h6>	
+				</div>			
+			</div>
+		</div>
+	</div>
 
 	<!-- tabla -->
 	<table class="table">
@@ -81,6 +90,30 @@
 				<h4 class="title">Donde los puestos de carga y descarga exigen mucho</h4>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 			</div>	
+		</div>
+	</div>
+
+	<!-- contacto -->
+	
+	<div class="wrapper short-contact">
+		<div class="component w4">
+			<h4>Contactá un<br>experto ahora!</h4>
+		</div>
+		<div class="component w4">
+			<form action="">
+				<input type="text" placeholder="Nombre">
+				<input type="text" placeholder="Apellido">
+				<input type="email" placeholder="Mail">
+				<select name="" id="">
+					<option value="">Equipo</option>
+					<option value="">Equipo</option>
+					<option value="">Equipo</option>
+					<option value="">Equipo</option>
+					<option value="">Equipo</option>
+				</select>
+				<button class="white">Comprar</button>
+				<button class="green">Enviar</button>
+			</form>
 		</div>
 	</div>
 

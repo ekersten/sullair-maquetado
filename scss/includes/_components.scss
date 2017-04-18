@@ -31,7 +31,6 @@
 
 	&.w2 {
 		width: 25%;
-		// max-width: 300px;
 
 		@media (max-width: $breakpoint-small) {
 			width: 50%;
@@ -41,13 +40,8 @@
 		}
 	}
 	
-	// &.w3 {
-	// 	width: 462px;
-	// }
-
 	&.w4 {
 		width: 50%;
-		// max-width: 624px;
 
 		.text {
 			padding: 30px;
@@ -62,7 +56,6 @@
 
 	&.w6 {
 		width: 75%;
-		// max-width: 970px;
 
 		@media (max-width: $breakpoint-medium) {
 			&.full-md {
@@ -436,4 +429,34 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+
+	.wrapper {
+		height: 620px;
+	}
+
+	.title, .subtitle {
+		color: $sullair-white;
+		margin: 0;
+		line-height: 0.9em;
+	}
+
+	.title {
+		font-size: 160px;
+		font-weight: $font-weight-bold;
+	}
+
+	.subtitle {
+		font-size: 24px;
+		font-weight: $font-weight-roman;
+	}
+}
+
+.vcenter {
+	display: table;
+	height: 100%;
+
+	.content {
+		display: table-cell;
+		vertical-align: middle;
+	}
 }
