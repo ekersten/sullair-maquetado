@@ -80,6 +80,7 @@ header {
 		overflow: hidden;
 		position: relative;
 		padding: 30px 0;
+		height: 80px;
 
 		.logo {
 			float: left;
@@ -213,6 +214,7 @@ header {
 .inverted-nav {
 	header {
 		background-color: $sullair-black;
+		border-color: $sullair-white;
 
 		.logo {
 			background-image: url('../img/logo_white.png');
@@ -240,6 +242,19 @@ header {
 				input[type="text"] {
 					color: $sullair-medium-grey2;
 				}
+			}
+		}
+	}
+
+	.breadcrumbs {
+		background: rgba(0,0,0,0.5);
+		color: $sullair-white;
+
+		a {
+			color: $sullair-white;
+
+			&:after {
+				color: $sullair-white;
 			}
 		}
 	}
@@ -407,6 +422,7 @@ header {
 		margin-bottom: $grid-gutter-width / 2;
 		padding-left: 0;
 		padding-right: 0;
+		float: none;
 		@include clearfix;
 
 		.text {
@@ -417,14 +433,17 @@ header {
 			margin-top: 138px;
 			@include box-shadow(5px, 5px ,10px, 0, rgba(0,0,0,0.4));
 		}
+
 	}
 
 	&.full-width-text-right {
+		background-color: $sullair-white;
 		width: 100%;
 		height: 600px;
 		margin-bottom: $grid-gutter-width / 2;
 		padding-left: 0;
 		padding-right: 0;
+		float: none;
 		@include clearfix;
 
 		.image, .text-wrapper {
@@ -473,6 +492,31 @@ header {
 				}
 			}
 		}
+
+		&.two-col-text {
+			.text-wrapper {
+				width: 30%;
+				font-size: .9em;
+
+				.text {
+					.columns {
+						columns: 2;
+					}
+				}
+			}
+
+			@media (max-width: $breakpoint-medium) {
+				.text-wrapper {
+					width: 50%;
+
+					.text {
+						.colums {
+							columns: 1;
+						}
+					}
+				}
+			}
+		}
 		
 		@media (max-width: $breakpoint-small) {
 
@@ -487,13 +531,16 @@ header {
 			}
 
 			.image {
-				background-size: 130%;
+			    background-size: contain;
+				background-position: center;
 			}
 
 			.text-wrapper {
 				height: 300px;
 			}
+
 		}
+
 	}
 	
 	&.video {
@@ -593,6 +640,26 @@ header {
 			background-color: $sullair-light-grey;
 		}
 	}
+
+	&.image-right {
+		padding-left: 0;
+		padding-right: 0;
+		float: right;
+		width: 75%;
+		@include clearfix;
+
+		img {
+			@include img-responsive;
+		}
+
+		@media (max-width: $breakpoint-medium) {
+			width: 100%;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			min-height: 300px;
+		}
+	}
 }
 
 .intro {
@@ -620,6 +687,7 @@ footer {
 	font-size: 12px;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	clear: both;
 	@include clearfix;
 
 	.wrapper {
@@ -770,7 +838,7 @@ footer {
 		}
 	}
 
-	thead {
+	thead, tfoot {
 		tr {
 			th {
 				text-align: left;
@@ -917,6 +985,65 @@ footer {
 		min-width: 300px;
 		padding: 1% 2%;
 	}
+}
+
+.breadcrumbs {
+	font-size: 12px;
+	margin-top: 5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 78px;
+	height: 37px;
+	padding: 6px 0 0;
+
+	ol {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		float: left;
+
+		li {
+			display: inline-block;
+
+			margin-right: 1em;
+
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $sullair-black;
+		display: block;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:after{
+			content: "\f054";
+			font-family: 'FontAwesome';
+			display: inline-block;
+			font-size: 8px;
+			margin-left: 14px;
+		}	
+
+	}
+
+	.contacto {
+		float: right;
+	}
+
+	&+.wrapper {
+		margin-top: 50px;
+	}
+}
+
+.hero {
+	height: 620px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 @import "includes/helpers";

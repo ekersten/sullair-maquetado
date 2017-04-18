@@ -11,6 +11,17 @@
 	
 	<?php include('includes/header.php'); ?>
 
+	<div class="breadcrumbs">
+		<div class="wrapper">
+			<ol>
+				<li><a href="#">Equipos</a></li>
+				<li><a href="#">Movimiento de tierra</a></li>
+				<li>Camiones Articulados</li>
+			</ol>
+			<a class="contacto" href="#">Contactanos</a>	
+		</div>
+	</div>
+	
 	<div class="wrapper">
 		<div class="component w8 h4 full-md">
 			<div class="slider">
